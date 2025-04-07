@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Payroll System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!--#include virtual="header.html" -->
+    </header>
+    <main class="p-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+        <h1 class="text-4xl font-bold mb-4">HR Payroll System</h1>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-lg">Total Employees</h2>
+                <span id="employee-count" class="text-2xl font-bold">0</span>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-lg">Total Leaves</h2>
+                <span id="leave-count" class="text-2xl font-bold">0</span>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-lg">Total Payrolls</h2>
+                <span id="payroll-count" class="text-2xl font-bold">0</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!--#include virtual="footer.html" -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
