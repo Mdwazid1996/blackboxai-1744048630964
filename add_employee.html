@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!--#include virtual="header.html" -->
+    </header>
+    <main class="p-6">
+        <h1 class="text-3xl font-bold mb-4">Add New Employee</h1>
+        <form id="employee-form">
+            <div class="mb-4">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" id="name" class="form-input" required>
+            </div>
+            <div class="mb-4">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+            <div class="mb-4">
+                <label class="form-label" for="department">Department</label>
+                <input type="text" id="department" class="form-input" required>
+            </div>
+            <div class="mb-4">
+                <label class="form-label" for="salary">Salary</label>
+                <input type="number" id="salary" class="form-input" required>
+            </div>
+            <button type="submit" class="btn-primary">Save Employee</button>
+        </form>
+    </main>
+    <footer>
+        <!--#include virtual="footer.html" -->
+    </footer>
+    <script src="employee.js"></script>
+</body>
+</html>
